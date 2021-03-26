@@ -21,3 +21,16 @@ The web app provides control in the hand of investors with the help of its innov
 Legal disputes, if any, can now be solved much easily as a permanent online ledger is being maintained. Thus, the party not fulfilling the terms of agreement can easily be traced.
 Flow Chart
 ![Screenshot](https://user-images.githubusercontent.com/65938639/112625717-4ff8c580-8e55-11eb-84cc-21de15c8a1c7.png)
+
+en http://localhost:3000 to view it in the browser.
+
+The page will reload if you make edits.
+You will also see any lint errors in the console.
+
+npm test
+Launches the test runner in the interactive watch mode.
+See the section about running tests for more information.
+
+npm run build
+Builds the app for production to the build folder.
+It correctly bundles React in production mode and optimizes the build for the best performance.
