@@ -22,7 +22,12 @@ Legal disputes, if any, can now be solved much easily as a permanent online ledg
 Flow Chart
 ![Screenshot](https://user-images.githubusercontent.com/65938639/112625717-4ff8c580-8e55-11eb-84cc-21de15c8a1c7.png)
 
-en http://localhost:3000 to view it in the browser.
+# Available Scripts
+In the project directory, you can run:
+
+npm start
+Runs the app in the development mode.
+Open http://localhost:3000 to view it in the browser.
 
 The page will reload if you make edits.
 You will also see any lint errors in the console.
