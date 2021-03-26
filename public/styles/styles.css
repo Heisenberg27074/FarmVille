@@ -4,6 +4,7 @@
 
 }
 #carousel img{
+    margin-top:2%;
     width: 100vw;
     height: 90vh;
     object-fit:cover;
@@ -42,7 +43,6 @@
     font-size: 7rem;
     font-family:cursive;
 }
-
 .details{
     display: inline-block;
     width: 40vw;
@@ -57,10 +57,8 @@
 }
 .desc{
     font-size: 1.3rem;
-    font-family: sans-serif;
-    color: grey;
-    
-    
+    font-family: cursive;
+    color: grey;  
 }
 .item-align-right{
     position: relative;
@@ -112,9 +110,12 @@ transition: all ease-in-out 0.5s;
     /* margin-top:10%; */
     font-family: cursive;
     font-size: 2rem;
-    
     color: white;
 }
 .white{
     color: white;
 }
+.fixed{
+    position:fixed;
+}
+

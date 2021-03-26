@@ -11,16 +11,16 @@ class Header extends React.Component {
         const { activeItem } = this.state
 
         return (
-            <Menu inverted size="huge">
-                <Link to=''>
+            <Menu className="m-0 fixed" inverted size="huge">
+                <Link to='/'>
                     <Menu.Item
-                        name='farmville'
+                        name='FarmVille'
                         active={activeItem === 'farmville'}
                         onClick={this.handleItemClick}
                     />
                 </Link>
                 <Menu.Menu position='right'>
-                    <Link to='campaigns'>
+                    <Link to='/campaigns'>
                         <Menu.Item position="right"
                             name='campaigns'
                             active={activeItem === 'campaigns'}

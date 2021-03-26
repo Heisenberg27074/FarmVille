@@ -38,9 +38,10 @@ class CampaignIndex extends Component {
 
     render() {
         return (
+            <div id="open-campaign">
             <Layout >
                 <div >
-                    <h3>Open Campaigns</h3>
+                    <h3 className="page-head" >Ongoing Campaigns</h3>
                     <Link to="/campaigns/new">
                         <a>
                             <Button
@@ -54,6 +55,7 @@ class CampaignIndex extends Component {
                     {this.renderCampaigns()}
                 </div>
             </Layout>
+            </div>
         );
     }
 };

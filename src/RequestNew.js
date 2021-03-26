@@ -47,16 +47,17 @@ class RequestNew extends Component {
 
     render() {
         return (
+            <div id="new-request">
             <Layout>
                 <Link
                     to={`/campaigns/${this.state.address}/requests`}
                 >
-                    <a>Back</a>
+                    <a id="back">Back</a>
                 </Link>
-                <h3>Create a Request</h3>
+                <h3 className="page-head">Create a Request</h3>
                 <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                     <Form.Field>
-                        <label>Description</label>
+                        <label id="desc">Description</label>
                         <Input
                             value={this.state.description}
                             onChange={event =>
@@ -66,15 +67,15 @@ class RequestNew extends Component {
                     </Form.Field>
 
                     <Form.Field>
-                        <label>Value in Ether</label>
+                        <label id="desc">Value in Ether</label>
                         <Input
                             value={this.state.value}
                             onChange={event => this.setState({ value: event.target.value })}
                         />
                     </Form.Field>
 
-                    <Form.Field>
-                        <label>Recipient</label>
+                    <Form.Field id="desc">
+                        <label id="desc">Recipient</label>
                         <Input
                             value={this.state.recipient}
                             onChange={event =>
@@ -84,11 +85,12 @@ class RequestNew extends Component {
                     </Form.Field>
 
                     <Message error header="Oops!" content={this.state.errorMessage} />
-                    <Button primary loading={this.state.loading}>
+                    <Button id="request-btn"  loading={this.state.loading}>
                         Create!
                     </Button>
                 </Form>
             </Layout>
+            </div>
         );
     }
 }

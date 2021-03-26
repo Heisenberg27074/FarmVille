@@ -1,0 +1,60 @@
+.display-inline-block{
+  display: inline-block;
+}
+#desc{
+  color:white;
+  font-size:medium;
+  margin-top:20px;
+  font-family: sans-serif;
+  /* font-weight: lighter; */
+}
+.page-head{
+  color:black;
+  font-size: 3rem;
+  margin-top:10%;
+  font-weight:300;
+  /* text-decoration: transparent; */
+  text-align: center;
+  font-family:fantasy;
+}
+#new-campaign{
+  background-image: url('field2.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+  
+}
+#campaign-show{
+  background-image: url('field.jpg');
+  background-position:center;
+  background-attachment: fixed;
+}
+#open-campaign{
+  background-image: url('field4.jpg');
+  background-size:cover;
+  background-attachment: fixed;
+}
+#request-btn{
+  background-color: crimson;
+  color:cornsilk;
+  font-size: 1.5rem;
+  transition: all 0.5s ease-in-out;
+  font-family: cursive;
+  position: relative;
+  margin-top: 7%;
+  
+}
+#request-btn:hover{
+  background-color:red;
+}
+
+#new-request{
+  background-image: url('field3.jpg');
+  background-size:cover;
+}
+#back{
+  color: black;
+  position:relative;
+  top:20%;
+  margin-top:20%;
+  font-size: 1.3rem;
+}

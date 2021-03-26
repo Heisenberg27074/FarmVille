@@ -4,6 +4,7 @@ import { Redirect } from 'react-router-dom'
 import Campaign from "../ethereum/campaign";
 import web3 from "../ethereum/web3";
 import PortisIndex from './Portis'
+import '../componentStyle/button.css';
 
 class ContributeForm extends Component {
     state = {
@@ -38,16 +39,16 @@ class ContributeForm extends Component {
 
     render() {
         return (
-            <>
-                <Button primary onClick={() => this.setState({ metamask: true, portis: false })}>
+            <>  <div className="display-inline-flex" >
+                <Button className="ui orange button "  onClick={() => this.setState({ metamask: true, portis: false })}>
                     Contribute with MetaMask
                 </Button>
                 {
                     this.state.metamask ?
                         <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                             <Form.Field>
-                                <label>Amount to Contribute</label>
-                                <Input
+                                <label id="desc"> Fill the amount to Contribute</label>
+                                <Input 
                                     value={this.state.value}
                                     onChange={event => this.setState({ value: event.target.value })}
                                     label="ether"
@@ -55,16 +56,20 @@ class ContributeForm extends Component {
                                 />
                             </Form.Field>
 
-                            <Message error header="Oops!" content={this.state.errorMessage} />
-                            <Button primary loading={this.state.loading}>
+                            
+                            <Message error header="Oops! Try adding some amount to contribute" content={this.state.errorMessage} />
+                            
+                            <Button secondary loading={this.state.loading}>
                                 Contribute!
                             </Button>
                         </Form>
                         :
                         null
                 }
-                {this.state.portis ? <PortisIndex /> : null}
-
+                <div className="display-inline-block">
+                    {this.state.portis ? <PortisIndex /> : null}
+                </div>
+            </div>
             </>
         );
     }

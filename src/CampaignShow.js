@@ -6,6 +6,8 @@ import web3 from "./ethereum/web3";
 import dvideo from "./ethereum/dvideo"
 import ContributeForm from "./components/ContributeForm";
 import { Link } from "react-router-dom";
+import './componentStyle/button.css';
+import { Embed } from 'semantic-ui-react'
 
 class CampaignShow extends Component {
     constructor(props) {
@@ -67,7 +69,7 @@ class CampaignShow extends Component {
 
         const items = [
             {
-                header: "Personal Info",
+                header: "Farmer Details",
                 meta: "Personal info about the farmer",
                 description:
                     `Name-${fullName} 
@@ -78,7 +80,7 @@ class CampaignShow extends Component {
             },
             {
                 header: manager,
-                meta: "Address of Manager",
+                meta: "Address of Farmer",
                 description:
                     "The manager created this campaign and can create requests to withdraw money",
                 style: { overflowWrap: "break-word" }
@@ -114,31 +116,46 @@ class CampaignShow extends Component {
 
     render() {
         return (
-            <Layout>
-                <h3>Campaign Show</h3>
-                <h3>{this.state.cropName}</h3>
-                <Grid>
-                    <Grid.Row>
-                        <Grid.Column width={10}>{this.renderCards()}</Grid.Column>
+            <div id="campaign-show">
+                <Layout >
 
-                        <Grid.Column width={6}>
-                            <ContributeForm address={this.state.address} />
-                        </Grid.Column>
-                    </Grid.Row>
+                    <h3 className="page-head ">Campaign Details</h3>
 
-                    <Grid.Row>
-                        <Grid.Column>
-                            <Link
-                                to={`/campaigns/${this.state.address}/requests`}
-                            >
-                                <a>
-                                    <Button primary>View Requests</Button>
-                                </a>
-                            </Link>
-                        </Grid.Column>
-                    </Grid.Row>
-                </Grid>
-            </Layout>
+
+                    <h3>{this.state.cropName}</h3>
+                    <Grid>
+                        <Grid.Row>
+                            <Grid.Column width={10}>{this.renderCards()}</Grid.Column>
+
+                            <Grid.Column width={6}>
+                                <ContributeForm address={this.state.address} />
+                                <h3  > Listen to the farmer.</h3>
+                                <Embed
+                                    style={{ "height": "50%", "width": "70%" }}
+                                    id='video'
+                                    placeholder='/farmer-testimonial.jpg'
+                                    source='vimeo'
+                                />
+                                
+                            </Grid.Column>
+                        </Grid.Row>
+
+
+                        <Grid.Row>
+                            <Grid.Column>
+                                <Link
+                                    to={`/campaigns/${this.state.address}/requests`}
+                                >
+                                    <a>
+                                        <Button id="request-btn" classname="p-5">View Requests</Button>
+                                    </a>
+                                </Link>
+                            </Grid.Column>
+                        </Grid.Row>
+                    </Grid>
+
+                </Layout>
+            </div>
         );
     }
 }

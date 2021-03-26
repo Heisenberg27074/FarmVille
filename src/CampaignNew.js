@@ -79,13 +79,14 @@ class CampaignNew extends Component {
 
     render() {
         return (
+            <div id="new-campaign">
             <Layout>
-                <h3>Create a Campaign</h3>
+                <h3 className="page-head ">Create a Campaign</h3>
 
                 {/* !! converts string to bool */}
                 <Form onSubmit={this.onSubmit} error={!!this.state.errorMessage}>
                     <Form.Field>
-                        <label>Name</label>
+                        <label id="desc">Name</label>
 
                         <Input
                             placeholder="Full Name"
@@ -96,7 +97,7 @@ class CampaignNew extends Component {
                         />
                     </Form.Field>
                     <Form.Field>
-                        <label>Crop Name</label>
+                        <label id="desc">Crop Name</label>
 
                         <Input
                             placeholder="Crop Name"
@@ -107,7 +108,7 @@ class CampaignNew extends Component {
                         />
                     </Form.Field>
                     <Form.Field>
-                        <label>Email</label>
+                        <label id="desc">Email</label>
 
                         <Input
                             placeholder="email"
@@ -118,7 +119,7 @@ class CampaignNew extends Component {
                         />
                     </Form.Field>
                     <Form.Field>
-                        <label>Phone No</label>
+                        <label id="desc">Phone No</label>
 
                         <Input
                             label="+91"
@@ -130,7 +131,7 @@ class CampaignNew extends Component {
                         />
                     </Form.Field>
                     <Form.Field>
-                        <label>Location</label>
+                        <label id="desc">Location</label>
 
                         <Input
                             placeholder="Location"
@@ -141,7 +142,7 @@ class CampaignNew extends Component {
                         />
                     </Form.Field>
                     <Form.Field>
-                        <label>Minimum contribution</label>
+                        <label id="desc">Minimum contribution</label>
 
                         <Input
                             label="wei"
@@ -153,7 +154,7 @@ class CampaignNew extends Component {
                         />
                     </Form.Field>
                     <Form.Field>
-                        <label>Share a video telling investors about yourself</label>
+                        <label id="desc">Share a video telling investors about yourself</label>
 
                         <Input
                             type='file' accept=".mp4, .mkv .ogg .wmv" onChange={this.captureFile}
@@ -161,11 +162,12 @@ class CampaignNew extends Component {
                     </Form.Field>
 
                     <Message error header="Oops!" content={this.state.errorMessage} />
-                    <Button loading={this.state.loading} primary>
+                    <Button id="request-btn" loading={this.state.loading} primary>
                         Create!
                     </Button>
                 </Form>
             </Layout>
+            </div>
         );
     }
 }
