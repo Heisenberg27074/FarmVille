@@ -40,4 +40,4 @@ npm run build
 Builds the app for production to the build folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
-https://www.youtube.com/watch?v=l2W1QtolCmI
+https://www.youtube.com/watch?v=fS2L2qzi3xI&t=82s
