@@ -22,6 +22,14 @@ Legal disputes, if any, can now be solved much easily as a permanent online ledg
 Flow Chart
 ![Screenshot](https://user-images.githubusercontent.com/65938639/112625717-4ff8c580-8e55-11eb-84cc-21de15c8a1c7.png)
 
+# Screenshots
+![image](https://user-images.githubusercontent.com/65938639/129751180-6d36f0eb-02ba-4f46-bc63-6d524a8c3f7b.png)
+![image](https://user-images.githubusercontent.com/65938639/129751244-5a0b37cd-4137-4274-9dae-713544b7aadf.png)
+![image](https://user-images.githubusercontent.com/65938639/129751388-7b8afcad-e869-48e2-922d-9067011df1f0.png)
+![image](https://user-images.githubusercontent.com/65938639/129751489-98ef3b23-da3d-4095-875c-e37c48cb13f6.png)
+![image](https://user-images.githubusercontent.com/65938639/129751591-4e8b1df2-788c-4fdd-b244-7bef4ff1a0b4.png)
+
+
 # Available Scripts
 In the project directory, you can run:
 
